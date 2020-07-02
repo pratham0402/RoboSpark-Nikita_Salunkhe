@@ -6,10 +6,10 @@ After yesterday's session, we hope you are now comfortable with Git and GitHub. 
 
 ## Steps to submit the task:
 
-Fork the repo
-Make the new branch of your name in the repo.
-Commit folder and files
-Make pull request Similar to your day 1 task
+1. Fork the repo
+2. Make the new branch of your name in the repo.
+3. Commit folder and files
+4. Make pull request Similar to your day 1 task
 Make a seperate folder for each task. That folder should contain all the files of that task. Follow folder name format.
 
 The folder name of the task should be:
