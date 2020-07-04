@@ -3,9 +3,17 @@
 
 typedef struct Queue
 {
-    char arr[10];
+    int arr[10];
     int front,rear;
 }Queue;
+
+
+struct Student
+{
+    int roll;
+    char name[20];
+};
+
 
 void initialize(Queue* q){
     q->front=0;
@@ -13,8 +21,8 @@ void initialize(Queue* q){
 
 }
 
-void enqueue(Queue* q,char x){
-    q->arr[q->rear++]=x;
+void enqueue(Queue* q,int x){
+    q->arr[q->rear++]= x;
 
 }
 
@@ -45,27 +53,21 @@ int main(){
     initialize(q1);
     
     printf("\nEnter number of students: ");
-    int n,temp;
-    char temps;
+    int n;
     scanf("%d",&n);
-    char names[n];
-    int rolls[n];
+    struct Student s[n];
     
-    printf("\nEnter roll_nos details:\n ");
+    printf("\nEnter details:\n ");
     for (int i=0; i<n; i++){
-        scanf("%d",&rolls[i]);
+        scanf("%d", &s[i].roll);
+        fflush(stdin);
+        scanf("%s",s[i].name);
+        //get();
     }
-
-   // for (int i=0; i<n; i++){
-   //     printf("\nEnter names details:\n ");
-   //     fflush(stdin);
-   //     scanf("%s",names[i]);
-        
-    //}
     
     for (int i=0; i<n; i++){
-        if (rolls[i]%2 == 0){
-            enqueue(q1, rolls[i]);
+        if (s[i].roll%2 == 0){
+            enqueue(q1, s[i].roll);
         }
     }
 
