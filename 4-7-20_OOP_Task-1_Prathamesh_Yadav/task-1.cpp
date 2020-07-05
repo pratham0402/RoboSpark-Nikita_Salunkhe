@@ -45,8 +45,22 @@ class Student
         }
     }
 
+    int totalMarks(int *mrks){
+    int total=0;
+    for (int i=0;i<5;i++){
+        total += mrks[i];
+    }
+    return total;
+}
+
+    void getCGPA(){
+        int n = totalMarks(mrks);
+        cgpa = (n/5)/(9.5);
+}
+
 };
 
+/*
 int totalMarks(int *arr){
     int total=0;
     for (int i=0;i<5;i++){
@@ -60,11 +74,13 @@ void getCGPA(Student &x){
     x.cgpa = (n/5)/(9.5);
     cout << x.cgpa; 
 }
+*/
 
 
 int main(){
     Student s;
     s.giveInput();
+    s.getCGPA();
     //int n = totalMarks(s.mrks);
     //cout << "total: " << n;
     s.giveDetail();
