@@ -38,7 +38,7 @@ void addBefore(int n, int d, struct node *head){
     struct node *new = (struct node *)malloc(sizeof(struct node));
     new->data = d;
     new->next = temp->next;
-    temp->next = new;
+    temp->next = new_head;
 }
 
 // delete front element
