@@ -1,0 +1,44 @@
+
+#about-section{
+    margin-top: 10%;
+    margin-left: 45%;
+    width: 20%;
+    height: 50%;
+}
+
+.back{
+    position: fixed;
+    background-color:blanchedalmond;
+    width: 100%;
+    height: 100%;
+}
+
+.mid{
+    position: fixed;
+    background-color: green;
+    margin-top: -440px;
+    margin-left: 39.5%;
+    width: 20%;
+    height: 30%;
+    border-radius: 100%;
+    opacity: 0.2;
+}
+
+#education{
+    position: fixed;
+    margin-left: 90%;
+}
+
+.mid{
+    animation-name: spark;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes spark
+{
+    80%{
+        transform: scale(0.8);
+    }
+}
