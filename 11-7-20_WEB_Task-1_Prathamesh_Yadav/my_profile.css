@@ -1,0 +1,49 @@
+
+body{
+    position: static;
+    padding: 0px;
+    margin: 0px;
+    background-color: turquoise;
+}
+
+.head{
+    padding: 1px;
+    margin: 20px;
+}
+
+#pic{
+    margin: 20px;
+    padding: 2px;
+}
+
+.info{
+    margin: 20px;
+    padding: 2px;
+    color: white;
+    font-size: 20px; 
+
+}
+
+.head2{
+    margin: 20px;
+    padding: 1px;
+}
+.head2 a{
+    color: white;
+}
+
+.skills{
+    color: white;
+}
+
+.slinks{
+    margin-left: 47%;
+    padding: 2px;
+    font-size: 50px;
+    margin-right: 50%;
+    
+    
+}
+.slinks a{
+    color: white;
+}
