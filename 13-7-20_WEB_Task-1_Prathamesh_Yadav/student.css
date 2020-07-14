@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("images/books.jpg");
+    background-size: cover;
+}
+
+.portal{
+    display: block;
+    margin-top: 300px;
+    margin-left: 225px;
+    font-size: medium;
+}
+
+#btn{
+    border-radius: 100%;
+    border-width: 1px;
+    background-color: whitesmoke;
+}
